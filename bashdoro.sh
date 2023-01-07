@@ -4,12 +4,14 @@ if [[ $(which mplayer) = "/usr/bin/mplayer" ]]; then
     :
 else 
     echo "mplayer not available download manually"
+    exit 1
 fi
 
 if [[ $(which toilet) = "/usr/bin/toilet" ]]; then
     :
 else 
     echo "toilet not available download manually"
+    exit 1
 fi
 
 read -p "working time (minutes): " duration
